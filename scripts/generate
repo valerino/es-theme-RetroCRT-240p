@@ -31,13 +31,17 @@ if [ "$systemtext" ]; then
 		xc:transparent \
 		-font zorque \
 		-fill "$primary" \
-		-pointsize 200 \
-		-gravity center \
-		-annotate +0+0 "$systemtext" \
+			-pointsize 200 \
+			-gravity center \
+			-annotate +0+0 "$systemtext" \
 		-fill "$secondary" \
-		-pointsize 195 \
-		-gravity center \
-		-annotate +0+0 "$systemtext" \
+			-pointsize 195 \
+			-gravity center \
+			-annotate +0+0 "$systemtext" \
+		-fill "$tertiary" \
+			-pointsize 190 \
+			-gravity center \
+			-annotate +0+0 "$systemtext" \
 		-trim \
 		+repage \
 			logo-big.png
